@@ -1,4 +1,4 @@
-true 0 0
-Kings Canyon 0 0
+True 
+Kings_Canyon 0 0
 Runoff 3 10
 Bunker 10 10
