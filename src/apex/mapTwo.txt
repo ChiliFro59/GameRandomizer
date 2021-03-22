@@ -1,0 +1,4 @@
+True
+Olympus 0 0
+Bonsai 5 5
+Solar_Array 2 7
