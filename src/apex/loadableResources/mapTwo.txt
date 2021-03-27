@@ -1,5 +1,19 @@
 True
 2
 Olympus 0 0
-Bonsai_Plaza 11 22
-Solar_Array 2 7
+Bonsai_Plaza 12 21
+Solar_Array 13 16
+Docks 8 4
+Carrier 6 6
+Oasis 4 9
+Estates 7 13
+Elysium 1 15
+Hydroponics 4 17
+Orbital_Cannon 19 17
+Grow_Towers 18 13
+Gardens 18 11
+Rift 15 6
+Power_Grid 11 7
+Fight_Night 8 7
+Energy_Depot 13 10
+Hammond_Labs 12 13
