@@ -1,5 +1,25 @@
 True 
 1
 Kings_Canyon 0 0
-Runoff 3 10
-Bunker 10 10
+Artillery 12 4
+Containment 8 8
+Crash_Site 8 2
+Spotted_Lake 4 6
+Runoff 1 11
+The_Pit 4 10
+Bunker 10 8
+High_Desert 4 14
+Airbase 1 15
+Gauntlet 2 18
+Salvage 7 19
+Market 11 18
+Caustic_Treatment 13 24
+Map_Room 18 22
+Repulsor 18 19
+Hydro_Dam 18 16
+The_Cage 15 15
+Labs 19 14
+Swamps 22 12
+Capacitor 18 9
+Broken_Relay 18 6
+The_Rig 22 7
