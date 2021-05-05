@@ -17,3 +17,4 @@ Power_Grid 11 7
 Fight_Night 8 7
 Energy_Depot 13 10
 Hammond_Labs 12 13
+Icarus 13 18

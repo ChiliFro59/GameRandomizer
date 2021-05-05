@@ -12,5 +12,6 @@ Octane
 Pathfinder
 Rampart
 Revenant
+Valkyrie
 Wattson
 Wraith

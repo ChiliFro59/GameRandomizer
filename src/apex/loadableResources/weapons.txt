@@ -8,9 +8,6 @@ Rifle
 Rifle
 Rifle
 Rifle
-Rifle
-Rifle
-Shotgun
 Shotgun
 Shotgun
 Shotgun
@@ -21,5 +18,7 @@ SMG
 Sniper
 Sniper
 Sniper
-Sniper
-Sniper
+Marksman
+Marksman
+Marksman
+Marksman
