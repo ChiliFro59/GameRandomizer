@@ -293,5 +293,10 @@
             <Font size="14.0" />
          </font>
       </Text>
+      <Text fx:id="season" fill="WHITE" layoutX="23.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Season ">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

@@ -187,6 +187,8 @@ public class ApexController implements Initializable
     private Pane paneInstruction;
     @FXML
     private Text textGoodLuck;
+    @FXML
+    private Text season;
 
     /**
      * Initializes the controller class.
@@ -199,6 +201,7 @@ public class ApexController implements Initializable
     {
         try
         {
+            loadSeason();
             loadMapLocations();
             loadCharacters();
             loadWeapons();
@@ -586,7 +589,7 @@ public class ApexController implements Initializable
         {
             Location tempLocation = mapTwo.get(1 + rand.nextInt(mapTwo.size() - 1));
             setMap(tempLocation);
-            return tempLocation.getLocationName();
+            return tempLocation.getLocationName();           
         }
         if ( RadioMapThree.isSelected() )
         {
@@ -667,10 +670,13 @@ public class ApexController implements Initializable
         circle.setStroke(Color.RED);
         int xValue = tempLocation.getxValue();
         int yValue = tempLocation.getyValue();
+        //int tempX = 14;
+        //int tempY = 18;
 
         try
         {
             gridPane.add(circle,xValue,yValue);
+            //gridPane.add(circle,tempX,tempY);
         }
         catch ( Exception e )
         {
@@ -1084,5 +1090,17 @@ public class ApexController implements Initializable
     private void handleCloseInstructions()
     {
         paneInstruction.setVisible(false);
+    }
+
+    private void loadSeason() throws Exception
+    {
+        URL challengesURL = new URL(
+          "https://raw.githubusercontent.com/ChiliFro59/GameRandomizer/main/src/apex/loadableResources/CurrentSeason.txt");
+        BufferedReader in = new BufferedReader(new InputStreamReader(challengesURL.openStream()));
+        String inputLine;
+        while ( ( inputLine = in.readLine() ) != null )
+        {
+            season.setText("Season "+inputLine);
+        }
     }
 }
