@@ -1,0 +1,9 @@
+build.xml
+build/
+dist/
+manifest.mf
+nbproject/
+src/apex/loadableResources/CurrentMapRotation.txt
+src/apex/loadableResources/CurrentSeason.txt
+src/apex/loadableResources/Map Info/
+src/images/
