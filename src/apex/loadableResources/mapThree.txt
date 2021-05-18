@@ -14,7 +14,7 @@ Refinery 17 4
 The_Epicenter 15 7
 Fragment_West 12 10
 Fragment_East 15 10
-Overlook 12 10
+Overlook 20 10
 Geyser 18 15
 Sorting_Factory 13 18
 Lava_City 19 20
