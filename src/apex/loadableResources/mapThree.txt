@@ -1,3 +1,6 @@
 True
 3
 Worlds_Edge 0 0
+test 5 5 
+another_test 10 10
+finaltest 7 7
