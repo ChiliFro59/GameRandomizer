@@ -115,7 +115,7 @@
             <Tooltip fx:id="toolTipGeneral" text="This is a tool tip" />
          </tooltip>
       </Button>
-      <RadioButton fx:id="RadioMapFive" layoutX="798.0" layoutY="227.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="178.0" text="Map 5" textFill="WHITE" textOverrun="CLIP">
+      <RadioButton fx:id="RadioMapFive" layoutX="798.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleRadioMaps" prefHeight="17.0" prefWidth="178.0" text="Map 5" textFill="WHITE" textOverrun="CLIP">
          <toggleGroup>
             <ToggleGroup fx:id="Map" />
          </toggleGroup>
@@ -123,11 +123,11 @@
             <Font name="Arial" size="14.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="RadioMapFour" layoutX="798.0" layoutY="204.0" minWidth="45.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="160.0" text="Map 4" textFill="WHITE" toggleGroup="$Map">
+      <RadioButton fx:id="RadioMapFour" layoutX="798.0" layoutY="204.0" minWidth="45.0" mnemonicParsing="false" onAction="#handleRadioMaps" prefHeight="16.0" prefWidth="160.0" text="Map 4" textFill="WHITE" toggleGroup="$Map">
          <font>
             <Font name="Arial" size="14.0" />
          </font></RadioButton>
-      <RadioButton fx:id="RadioMapThree" layoutX="798.0" layoutY="181.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="190.0" text="Map 3" textFill="WHITE" toggleGroup="$Map">
+      <RadioButton fx:id="RadioMapThree" layoutX="798.0" layoutY="181.0" mnemonicParsing="false" onAction="#handleRadioMaps" prefHeight="17.0" prefWidth="190.0" text="Map 3" textFill="WHITE" toggleGroup="$Map">
          <font>
             <Font name="Arial" size="14.0" />
          </font></RadioButton>

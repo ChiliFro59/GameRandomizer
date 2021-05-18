@@ -221,15 +221,19 @@ public class ApexController implements Initializable
             System.out.println(e);
         }
 
-        //bottom left corner of center 4 squares
+        //just below and as center as possible following grid lines
+         //used to find location to make plotting circles easier
+        //unncomment and bring grid pane to front in scene builder
+        /*
         gridPane.addEventHandler(MouseEvent.MOUSE_CLICKED, e ->
         {
-            System.out.println(e.getX()/18-1);
-            System.out.println(e.getY()/18-1);
+            System.out.println("X: " + (e.getX() / 18 - 1));
+            System.out.println("Y: " + (e.getY() / 18 - 1));
         });
-
+        */
     }
 
+    
     private void loadMapLocations() throws Exception
     {
 
@@ -464,13 +468,13 @@ public class ApexController implements Initializable
         if ( radioPlayersTwo.isSelected() )
         {
             String playerOne = fieldDuosPlayerOne.getText();
-            if(playerOne.length()==0)
+            if ( playerOne.length() == 0 )
             {
                 playerOne = "Player 1";
             }
             duoPlayers.add(playerOne);
             String playerTwo = fieldDuosPlayerTwo.getText();
-            if(playerTwo.length()==0)
+            if ( playerTwo.length() == 0 )
             {
                 playerTwo = "Player 2";
             }
@@ -480,19 +484,19 @@ public class ApexController implements Initializable
         if ( radioPlayersThree.isSelected() )
         {
             String playerOne = fieldTriosPlayerOne.getText();
-            if(playerOne.length()==0)
+            if ( playerOne.length() == 0 )
             {
                 playerOne = "Player 1";
             }
             trioPlayers.add(playerOne);
             String playerTwo = fieldTriosPlayerTwo.getText();
-            if(playerTwo.length()==0)
+            if ( playerTwo.length() == 0 )
             {
                 playerTwo = "Player 2";
             }
             trioPlayers.add(playerTwo);
             String playerThree = fieldTriosPlayerThree.getText();
-            if(playerThree.length()==0)
+            if ( playerThree.length() == 0 )
             {
                 playerThree = "Player 3";
             }
@@ -589,7 +593,7 @@ public class ApexController implements Initializable
         {
             Location tempLocation = mapTwo.get(1 + rand.nextInt(mapTwo.size() - 1));
             setMap(tempLocation);
-            return tempLocation.getLocationName();           
+            return tempLocation.getLocationName();
         }
         if ( RadioMapThree.isSelected() )
         {
@@ -672,10 +676,13 @@ public class ApexController implements Initializable
         int yValue = tempLocation.getyValue();
         //int tempX = 14;
         //int tempY = 18;
+        
+       
+        
 
         try
         {
-            gridPane.add(circle,xValue,yValue);
+            gridPane.add(circle, xValue, yValue);
             //gridPane.add(circle,tempX,tempY);
         }
         catch ( Exception e )
@@ -998,23 +1005,24 @@ public class ApexController implements Initializable
     private void setTeamChallenge()
     {
         teamChallenge = challenges.get(rand.nextInt(challenges.size()));
-                if(radioPlayersOne.isSelected())
-                {
-                    fieldPlayerOneChallengeOutput.setText(teamChallenge);
-                }
-                if(radioPlayersTwo.isSelected())
-                {
-                    fieldPlayerOneChallengeOutput.setText(teamChallenge);
-                    fieldPlayerTwoChallengeOutput.setText(teamChallenge);
-                }
-                if(radioPlayersThree.isSelected())
-                {
-                    fieldPlayerOneChallengeOutput.setText(teamChallenge);
-                    fieldPlayerTwoChallengeOutput.setText(teamChallenge);
-                    fieldPlayerThreeChallengeOutput.setText(teamChallenge);
-                }
-                
+        if ( radioPlayersOne.isSelected() )
+        {
+            fieldPlayerOneChallengeOutput.setText(teamChallenge);
+        }
+        if ( radioPlayersTwo.isSelected() )
+        {
+            fieldPlayerOneChallengeOutput.setText(teamChallenge);
+            fieldPlayerTwoChallengeOutput.setText(teamChallenge);
+        }
+        if ( radioPlayersThree.isSelected() )
+        {
+            fieldPlayerOneChallengeOutput.setText(teamChallenge);
+            fieldPlayerTwoChallengeOutput.setText(teamChallenge);
+            fieldPlayerThreeChallengeOutput.setText(teamChallenge);
+        }
+
     }
+
     @FXML
     private void handleRerollPlayerOneChallenge( ActionEvent event )
     {
@@ -1023,7 +1031,7 @@ public class ApexController implements Initializable
             if ( radioTeamChallenge.isSelected() )
             {
                 setTeamChallenge();
-                
+
             }
 
             fieldPlayerOneChallengeOutput.setText(getRandomChallenge());
@@ -1043,7 +1051,7 @@ public class ApexController implements Initializable
             if ( radioTeamChallenge.isSelected() )
             {
                 setTeamChallenge();
-                
+
             }
 
             fieldPlayerTwoChallengeOutput.setText(getRandomChallenge());
@@ -1058,12 +1066,12 @@ public class ApexController implements Initializable
     @FXML
     private void handleRerollPlayerThreeChallenge( ActionEvent event )
     {
-       try
+        try
         {
             if ( radioTeamChallenge.isSelected() )
             {
                 setTeamChallenge();
-                
+
             }
 
             fieldPlayerThreeChallengeOutput.setText(getRandomChallenge());
@@ -1074,6 +1082,7 @@ public class ApexController implements Initializable
             textErrorText.setText("Please click randomize first");
         }
     }
+
     @FXML
     private void handleOpenInstructions()
     {
@@ -1100,7 +1109,7 @@ public class ApexController implements Initializable
         String inputLine;
         while ( ( inputLine = in.readLine() ) != null )
         {
-            season.setText("Season "+inputLine);
+            season.setText("Season " + inputLine);
         }
     }
 }
