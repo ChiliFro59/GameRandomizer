@@ -1,6 +1,6 @@
 True 
 1
-Kings_Canyon 0 0
+King's_Canyon 0 0
 Artillery 12 4
 Containment 9 7
 Crash_Site 8 2

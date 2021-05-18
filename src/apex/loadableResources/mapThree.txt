@@ -1,6 +1,23 @@
 True
 3
-Worlds_Edge 0 0
-test 5 5 
-another_test 10 10
-finaltest 7 7
+World's_Edge 0 0
+Trials 4 5
+Skyhook 8 5
+Countdown 6 8
+Lava_Fissure 4 10
+Train_Yard 8 11
+Staging 7 14
+Thermal_Station 6 18
+The_Tree 9 21
+Survey_Camp 13 5
+Refinery 17 4
+The_Epicenter 15 7
+Fragment_West 12 10
+Fragment_East 15 10
+Overlook 12 10
+Geyser 18 15
+Sorting_Factory 13 18
+Lava_City 19 20
+Dome 17 23
+Launch_Site 13 22
+Harvester 11 15
