@@ -15,3 +15,5 @@ Revenant
 Valkyrie
 Wattson
 Wraith
+Seer
+Ash

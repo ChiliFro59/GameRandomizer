@@ -1,6 +1,7 @@
 LMG
 LMG
 LMG
+LMG
 Pistol
 Pistol
 Pistol
@@ -11,6 +12,7 @@ Rifle
 Shotgun
 Shotgun
 Shotgun
+SMG
 SMG
 SMG
 SMG
