@@ -1,3 +1,20 @@
 True
 4
 Storm_Point 0 0
+North_End 5 4
+Checkpoint 6 7
+The_Mill 2 11
+Cenote_Cave 2 17
+The_Wall 11 3
+Barometer 7 17
+Cascade_Falls 11 9
+Antenna 13 17
+Ship_Fall 11 22
+Gale_Station 15 20
+Fish_Farms 19 20
+Launch_Pad 18 15
+Storm_Catcher 17 10
+Command_Center 14 7
+Highpoint 17 2
+Thunder_Watch 18 6
+Lightning_Rod 20 3
