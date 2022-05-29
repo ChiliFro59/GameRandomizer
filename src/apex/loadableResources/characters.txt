@@ -17,3 +17,5 @@ Wattson
 Wraith
 Seer
 Ash
+Maggie
+NewCastle
