@@ -19,3 +19,4 @@ Seer
 Ash
 Maggie
 NewCastle
+Vantage
